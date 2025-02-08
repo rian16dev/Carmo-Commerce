@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from galeria import views  # Importando do app correto
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('', views.index, name='index'),  # Página inicial
+    path('imagem/', views.imagem_view, name='imagem'),
 ]

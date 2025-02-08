@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Carmo Commerce</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="hero">
+				<!-- HEADER -->
+				<div class="header">
+					<ul>
+						<li><a href="{% url 'imagem' %}">Empresas</a></li>
+						<li><a href="">Comercio</a></li>
+						<li>Entrar</li>
+					</ul>
+				</div>
+
+				<!-- BG -->
+				<div class="bg">
+					<div class="left">
+						<img src="{% static 'images/dish-left.png'%}" alt="" />
+					</div>
+					<div class="right">
+						<img class="svg" src="{% static 'images/right.svg'%}" alt="" />
+						<img src="{% static 'images/dish-right.png' %}" alt="" />
+					</div>
+					<div class="content">
+						<img src="{% static 'images/carmo_commerce_logo_no_bg.png' %}" alt="" class="logo" />
+						<h2>Nunca foi tão facil pedir <span>lanche</span></h2>
+						<p>Descubra restaurantes perto de você</p>
+						<div class="form">
+							<div class="search">
+								<img src="{% static 'images/search.svg' %}" alt="" />
+								<input type="text" placeholder="Buscar endereço e número" />
+							</div>
+							<button>Buscar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner">
+				<img src="{% static 'images/landing-banner-1.png' %}" alt="" />
+				<img src="{% static 'images/landing-banner-2.png' %}" alt="" />
+				<img src="{% static 'images/landing-banner-3.png' %}" alt="" />
+			</div>
+
+			<div class="footer">
+				<img src="{% static 'images/carmo_commerce_logo_no_bg.png' %}" alt="" />
+				<span>© Copyright 2025 - Carmo Commerce <br />Todos os direitos reservados</span>
+			</div>
+		</div>
+	</body>
+</html>
